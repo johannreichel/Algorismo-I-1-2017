@@ -1,0 +1,49 @@
+
+// Menu.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>
+#include"conio.h"
+using namespace std;
+void main ()
+
+	
+{
+	float area,base, altura , lado ,salir;
+	int opcion;
+	cout<<"menu"<<endl;
+	cout<<"1.-area de triangulo"<<endl;
+	cout<<"2.-area de rectangulo"<<endl;
+	cout<<"3.-area del cuadrado"<<endl;
+	cout<<"0.-salir"<<endl;
+	cout<<"Ingrese opcion a escoger"<<endl;
+	cin>>opcion;
+	switch(opcion)
+
+	{
+	case 1: cout<< "ingrese base:";
+		cin>> base;
+		cout<<"ingrese altura";
+		cin>>altura;
+			area=(base*altura)/2;
+			cout<<"El area del triangulo es"<<area;
+			break;
+	case 2: cout << "ingrese base";
+		cin >>base;
+		cout<<"ingrese altura";
+		cin >>altura;
+		area= (base * altura);
+		cout <<"el area del rectangulo es :"<<area;
+		break;
+	case 3:cout <<"ingrese lado";
+		cin>>lado;
+			area=(lado *lado);
+			cout<<"El area del cuadrado es :"<<area;
+			break;
+	case 0:
+		cout<<"salir";
+		break;
+	}getch();
+}
+
