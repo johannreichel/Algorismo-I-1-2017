@@ -24,7 +24,7 @@ void main()
 	cin>>b;
 	cout<<"Ingrese el valor de c:"<<endl;
 	cin>>c;
-	d=discriminante(a,b,c);
+	d=discriminantes(a,b,c);
 	if(d==0)
 	{
 		x1=unica(a,b);
