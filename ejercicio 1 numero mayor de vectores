@@ -1,0 +1,37 @@
+// 1.	Hacer un programa para sacar el máximo valor de un vector de valores ya sean reales o enteros..cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 100
+
+using namespace std;
+void cargarvector(float a[],int n);
+void hallarmayor(float a[],int n);
+
+void main()
+{int mayor,n;
+float vector[MAX];
+cout<<"Ingrese el tamaño del vector"<<endl;
+cin>>n;
+cargarvector(vector,n);
+hallarmayor(vector,n);
+getch();
+}
+
+void cargarvector(float a[],int n)
+{ for(int i=1;i<=n;i++)
+{cout<<"Ingresa el vector v["<<i<<"]= ";
+cin>>a[i];
+}
+}
+
+void hallarmayor(float a[],int n)
+{int mayor=a[1];
+for(int i=1;i<=n;i++)
+{ if(a[i]>=mayor)
+{mayor=a[i];
+}
+}
+cout<<"El numero mayor del vector es: "<<mayor;
+}
