@@ -4,7 +4,6 @@
 #include "stdafx.h"
 #include<iostream>
 #include<string>
-#include"conio.h"
 
 using namespace std ;
 
@@ -41,9 +40,9 @@ void main()
 #include "stdafx.h"
 #include<iostream>
 #include<string>
-#include"conio.h"
 
 using namespace std ;
+
  int menorDigito(int num)
  {
 	 int men=9,d;
@@ -69,3 +68,12 @@ using namespace std ;
 	 i=i=1;
  }
 }
+
+//Encontrar la frecuencia de cada uno de los elementos
+//de un factor
+ void frecuencia ( int v[], int n)
+ {
+
+ }
+
+ 
